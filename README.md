@@ -1,3 +1,12 @@
 # Team genSUS
-## yo
-the speed of light
+## Intro
+we are a sus team
+
+## Team
+sus people
+
+## Projects
+making sus things
+
+## Vision
+spread susness
