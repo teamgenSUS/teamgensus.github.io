@@ -1,139 +1,82 @@
-
 <html>
-<head><title>genSUS</title>
+<head>
+<title>
+Final1
+</title>
+
 <style>
-#sitemap{
-	position: fixed;
-	bottom:0vh;
-	left:30vw;
-	background-color: rgba(0, 0, 0, 0.9);
-	border-radius: 8px;		
-	border-top: 1vh solid red;
-	border-bottom: 1vh solid red;
-	width: 42vw;
-	height: 12vh;	
-	transition: 0.7s ease-out;	
-	opacity: 0.4;
+
+#container {
+    width: 98vw;
+    height: 98vh;
+    background-image:url(logo_v3.png);  
+    transition: 0.9s ease;
 }
 
-#sitemap:hover{
+#clickk{
+	background-image:url(buttonn11.jpg);
+	transition: 0.9s ease;
+	position:absolute;
+   	top:2vh;
+     left:45vw;
+	opacity:0.6;
+	width:7.1vw;
+	height:4vh;
+
+}
+#clickk : hover{
+	opacity : 1.0;
+}
+
+#link1{
+  	transition: 1.3s ease;
+  	background: rgba(0,0,0,0.5);
+    	border-radius: 0%;
+	position:absolute;
+   	top:-37vh;
+     left:14vw;
 	opacity:1;
-	transform: scale(1.1);
-	background-color: rgba(0, 0, 0,1);
+	width:70vw;
+	height:35vh;
+	box-shadow: -4px 6px 16px 3px #c55151;
 }
 
 
 
 
 
-
-
-
-
-
-#content1{
-	background-image: url("logo_v3.png");
-	width:98vw;
-	height:150vh;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-#hi{
-	position: absolute;
-	top:30vh;
-	left:6vw;
-	background-color: rgba(0, 0, 0, 0.8);
+#aaa{
+	position:absolute;
+   	top:60vh;
+     left:-15vw;
+	opacity:0;
 	border-radius: 8px;		
-	border-left: 0.3vh solid red;
-	border-right: 0.3vh solid red;
-	width: 19vw;
-	height: 19vw;	
-	transition: 0.7s ease;	
-	opacity: 1.0;	
-}
-
-#hi:hover{
-	transform: scale(1.1);
-}
-
-
-
-
-#intro{
-	position: absolute;
-	top:30vh;
-	left:26vw;
-	background-color: rgba(0, 0, 0, 0.8);
-	border-radius: 8px;		
-	border-left: 0.3vh solid red;
-	border-right: 0.3vh solid red;
-	width: 60vw;
-	height: 19vw;	
-	transition: 0.7s ease;	
-	opacity: 1.0;
-}
-
-#intro:hover{
-	transform: scale(1.05);
-}
-
-
-
-
-
-
-
-
-body
-{
-	font-size:      20%.; 
-	padding:         0;
-	background-color:white;
-	font-family:  arial
-}
-
-
-
-
-
-
-#b1{
-	position: absolute;
-	top:3vh;
-	left:2vw;	
-	border-radius: 8px;		
-	width:8vw;
-	height:7vh;
+	width:12vw;
+	height:10vh;
 	font-size:2.5vh;
+	background-color: white;
+	transition: 0.9s ease;
+	border-radius: 9%;
+	cursor:hand;
 	border-top: 5px solid red;
-	border-bottom:none;
-	border-right:none;
-	border-left:none;
-	cursor: hand;
+	border-bottom: 5px solid red;
+	opacity : 0.5;
+
 }
 
-#b1 span {
+
+#aaa: hover{
+opacity: 1;
+}
+
+#aaa span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-#b1 span:after {
+#aaa span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -142,168 +85,50 @@ body
   transition: 0.5s;
 }
 
-#b1:hover span {
+#aaa:hover span {
   padding-right: 25px;
 }
 
-#b1:hover span:after {
+#aaa:hover span:after {
   opacity: 1;
   right: 0;
 }
-
-
-
-
-
-
-
-#b2{
-	position: absolute;
-	top:3vh;
-	left:12vw;	
-	border-radius: 8px;		
-	width:8vw;
-	height:7vh;
-	font-size:2.5vh;
-	border-top: 5px solid red;
-	border-bottom:none;
-	border-right:none;
-	border-left:none;
-	cursor: hand;
-}
-
-
-#b2 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-#b2 span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -10px;
-  transition: 0.5s;
-}
-
-#b2:hover span {
-  padding-right: 25px;
-}
-
-#b2:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-
-
-
-
-
-
-
-#b4{
-	position: absolute;
-	top:3vh;
-	left:22vw;
-	border-radius: 8px;		
-	width:8vw;
-	height:7vh;
-	font-size:2.5vh;
-	border-top: 5px solid red;
-	border-bottom:none;
-	border-right:none;
-	border-left:none;
-	cursor: hand;
-}
-
-
-
-#b4 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-#b4 span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -10px;
-  transition: 0.5s;
-}
-
-#b4:hover span {
-  padding-right: 25px;
-}
-
-#b4:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-
-
-
-
-#b5{
-	position: absolute;
-	top:3vh;
-	left:32vw;
-	border-radius: 8px;		
-	width:8vw;
-	height:7vh;
-	font-size:2.5vh;
-	border-top: 5px solid red;
-	border-bottom:none;
-	border-right:none;
-	border-left:none;
-	cursor: hand;
-}
-
-#b5 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-#b5 span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -10px;
-  transition: 0.5s;
-}
-
-#b5:hover span {
-  padding-right: 25px;
-}
-
-#b5:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-
-
-
-
 
 
 </style>
 
 
 
+<script>
+function slidein(){
+	document.getElementById("clickk").style.top="600";
+	document.getElementById("clickk").style.opacity="0";
+	document.getElementById("link1").style.top="290";
+	document.getElementById("container").style.opacity="0.3";
+	document.getElementById("link1").style.opacity="1.0";
+}
+
+
+
+function come(){
+	document.getElementById("aaa").style.opacity="1";
+	document.getElementById("aaa").style.left="43.5vw";
+}
+
+
+
+
+function home(){
+	document.getElementById("Homee").style.opacity="1.0";
+}
+
+
+
+</script>
 
 
 </head>
+
 
 <body>
 
@@ -311,84 +136,22 @@ body
 
 
 
+<center>
+<div id="container">
+</div>
+
+
+<div id="clickk" onclick="slidein();setTimeout(come,1500); setTimeout(home,2700); "></div>
+
+<div id="link1"><font color="yellow" size=11vh>&#9787;</font><br><font color="white" size=6vh>genSUS</font><br><font color="white" size=6vh>Step into a world of susness.</font></div>
 
 
 
 
+<button id="aaa" onclick="location.href='genSUS1.html';"><span>Take that step</span></button>
 
-<div id="content1">
 
-<div id="hi"><center><br><br><br>
-<font size="7vh" color="red"><b>Hi</b></font>
-<br>
-<font size="4vh" color="red"><b>Welcome to our website.<br><font color="white" size="5vh">Team genSUS</font><br><br>#sus</b></font>
 </center>
-</div>
-
-
-
-<div id="intro"><center>
-
-<!-- <font size="7vh" color="white"><b>#1</b></font><br> -->
-<br><br><br>
-<font size="5vh" color="white"><b>We are a sus Team.</b></font>
-
-
-<br><br><br><br>
-<font size="4.5vh" color="red"><b>
-We make a group of enthusisatic, sus people who make sus things. We like to spread susness.<br>
-A quick summary of what we're working on right now: self balancing robot, autonomous rover and how cameras can do what lidar does (for use on our 2 projects)
-</font></b>
-</div>
-
-</div>
-
-
-
-
-
-
-
-
-<br><br><br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="demo"></div>
-
-
-
-
-<div id="sitemap">
-<a href="#cont"><button id="b1"><span>Home</span></button></a>
-<a href="#Projects"><button id="b2"><span>Projects</span></button></a>
-<a href="#AboutUs"><button id="b4"><span>About Us</span></button></a>
-<a href="#ReachUs"><button id="b5"><span>Reach Us</span></button></a>
-</div>
-
-
-
-
-
 
 
 
