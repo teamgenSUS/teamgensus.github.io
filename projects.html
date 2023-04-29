@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+*{
+    font-family: 'League Spartan', sans-serif;
+  
+   
+}
+
+a{
+    text-decoration: none;
+    color:#e00300;
+}
+        .navigation{
+            position: fixed;
+            top:0;
+            padding-top: 30px;
+            height:70px;
+            opacity: 1;
+            z-index: 200;
+        }
+        .line1::after{
+        top: 35px;
+    }
+    .line2::after{
+        top: 65px;
+    }
+    .line3::after{
+        top: 95px;
+    }
+    .belownav {
+        position: fixed;
+        top: 0px;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(25, 24, 24);
+        z-index: 102;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        transform: scale(1);
+    }
+    .belownav h1{
+       width: 90%;
+       text-align: center;
+       margin: auto;
+       font-size: 150px;
+       border-bottom: #e00300 3px solid;
+    }
+
+    
+    .project {
+        position: relative;
+        height: 250vh;
+        width: 100vw;
+        background-color: rgb(24, 25, 24);
+        z-index: 101;
+    }
+    .empty{
+        width:100%;
+        height:127vh;
+        background-color: rgb(24, 25, 24);
+    }
+    .projects {
+        height: 80vh;
+        width: 100vw;
+        background-color: rgb(25, 24, 24);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .projects>div {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .name {
+        font-size: 50px;
+        border-bottom: 4px solid #e00300;
+        padding-bottom: 20px;
+    }
+
+    .explore {
+        font-size: 43px;
+
+    }
+
+    .projects p {
+        text-align: end;
+    }
+    .p1 {
+        background-color: rgb(24, 25, 24);
+        border: 2px solid #e00300;
+        background-image: url("grover.png");
+        background-size: 800px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .p1>div,
+    .p2>div {
+        margin-bottom: 30px;
+    }
+
+    .p2 {
+        background-color: rgb(24, 25, 24);
+        border:2px solid #e00300;
+        background-image: url("thanopod.png");
+        background-size: 700px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+   
+    .completed{
+        background-color: rgb(24, 25, 24);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;        
+    }
+    .completed div{
+        height:300px;
+        background-color: rgb(24, 25, 24);
+        border: 2px solid #e00300;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        transition:all 0.5s;
+    }
+    .completed div:hover{
+        background-color: rgb(21, 22, 21);
+    }
+  
+    .completed h1{
+        color: #e00300;
+        font-size: 30px;
+        margin-top: 10px;
+        border-bottom: 2px solid #e00300;
+    }
+    .completed ion-icon{
+        transition:all 1s;
+    }
+    .completed ion-icon:hover{
+        margin-bottom: 10px;
+        scale:2;
+    }
+    @media only screen and (max-width: 600px) {
+        .projects {
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .projects p {
+            text-align: start;
+
+        }
+        .projects>div {
+            width: 100%;
+            align-items: start;
+            padding-left: 20px;
+        }
+
+        .projects>div>div {
+            width: 100%;
+        }
+        .projects h1 {
+            text-align: left;
+            margin-top: 20px;
+
+        }
+        ion-icon {
+            font-size: 16px;
+        }
+        .explore {
+            font-size: 20px;
+        }
+        .completed{
+        background-color: rgb(24, 25, 24);
+        display: grid;
+        grid-template-columns: 1fr ;        
+    }
+    .completed div{
+        height:200px;
+    }
+    .project {
+       
+        height: 230vh;
+    }
+    .belownav h1{
+        font-size: 80px;
+    }
+    .p2,.p1 {      
+        background-size: 200px;  
+        background-position: bottom;    
+    }
+    }
+
+    .discord{
+        position:fixed;
+        margin:auto;
+        z-index: 105;
+        height:100vh;
+        width:100vw;
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(24, 24, 23,0.3);
+        display:none;
+    }
+    .space{
+        /* height: 50vh; */
+        width: 80vw;
+        background-color: rgb(24, 24, 23);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: rgb(24, 24, 23) 10px groove;
+        text-align: center;
+    }
+    .but{
+        background-color: rgb(24, 24, 23);
+        flex: 0.1;
+        width: 100%;
+        text-align: end;
+      
+    }
+    .link{
+        background-color: rgb(24, 24, 23);
+        flex:0.9;
+        padding-top: 20px;
+    }
+    .link ul{
+        list-style: none;
+        margin-left: 40px;
+        margin-right: 40px;
+        font-size: 40px;
+        color:#e00300;
+    }
+    ion-icon {
+  font-size: 48px;
+  color: #e00300;
+}
+button{
+    background-color: rgb(24, 24, 23);
+    border: none;
+}
+@media only screen and (max-width: 600px) {
+        .link ul{
+       
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+       
+    }
+    ion-icon {
+  font-size: 32px;
+    }
+    .p2,.p1 {      
+        background-size: 200px;  
+        background-position: bottom;    
+    }
+   
+}
+
+</style>
+<body>
+    <div class="discord" id="id002">
+        <div class="space">
+            <div class="but"><button class="sbut" onclick="document.getElementById('id002').style.display='none'"><ion-icon name="close-circle-outline"  ></ion-icon></button></div>
+            <div class="link">
+                <ul>
+                    <li>A six wheeled ground based rover with rocker bogie suspension that will be capable of maneuvering through difficult terrains.
+
+                    </li>
+                    <br>
+                    <li>It will use Computer Vision for object detection and avoidance along with a variety of other engineering concepts.
+
+                    </li>
+                    <br>
+                   
+                </ul>
+              
+            </div>
+        </div>
+    </div>
+    <div class="discord" id="id003">
+        <div class="space">
+            <div class="but"><button class="sbut" onclick="document.getElementById('id003').style.display='none'"><ion-icon name="close-circle-outline"  ></ion-icon></button></div>
+            <div class="link">
+                <ul>
+                    <li>You might have heard of the Segway, but now picture it being seamlessly integrated with your own two feet. It's the next big thing in robotics, and we're working to make it a reality.
+
+                    </li>
+                    <br>
+                    <li>Thanopod is a two wheeled self balancing robot that will be capable of traversing through various terrains, transporting loads & navigating using a camera.
+
+                    </li>
+                    <br>
+                   
+                </ul>
+               
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="navigation">
+            <div class="navlogo">
+                <a href="./index.html"><img src="logo.png" alt="error loading logo"></a>
+            </div>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="list">
+                <ul style="list-style: none;">
+                    <a href="./index.html"><li class="line1">HOME&nbsp; </li></a>
+                    <a href="./projects.html"><li class="line2">PROJECT&nbsp;</li></a>
+                   <a href="./team.html"><li class="line3">TEAM&nbsp;</li></a> 
+                  
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <div class="belownav">
+       <h1>
+        PROJECTS
+       </h1>
+     
+
+    </div>
+    <div class="project">
+        <div class="empty"></div>
+        <section>
+            <div class="projects">
+                <div class="p1">
+                    <div>
+                        <h1 class="name">ROVER</h1>
+                        
+                    </div>
+                    <div>
+                        <h1 onclick="document.getElementById('id002').style.display='flex'" class="explore">MORE<ion-icon name="arrow-forward-outline"></ion-icon></h1>
+                    </div>
+    
+                </div>
+                <div class="p2">
+                    <div>
+                        <h1 class="name">THANO POD</h1>
+                       
+                    </div>
+                    <div>
+                        <h1 onclick="document.getElementById('id003').style.display='flex'" class="explore">MORE<ion-icon name="arrow-forward-outline"></ion-icon></h1>
+                    </div>
+    
+                </div>
+                
+            </div>
+    
+        </section>
+        <!-- <section>
+            <div class="completed">
+                <div>
+                    <h1>PROJECT 1</h1>
+                    <h2><ion-icon name="add-circle-outline"></ion-icon></h2>
+                </div>
+                <div>
+                    <h1>PROJECT 2</h1>
+                    <h2><ion-icon name="add-circle-outline"></ion-icon></h2>
+                </div>
+                <div>
+                    <h1>PROJECT 3</h1>
+                    <h2><ion-icon name="add-circle-outline"></ion-icon></h2>
+                </div>
+                <div>
+                    <h1>PROJECT 4</h1>
+                    <h2><ion-icon name="add-circle-outline"></ion-icon></h2>
+                </div>
+                <div>
+                    <h1>PROJECT 5</h1>
+                    <h2><ion-icon name="add-circle-outline"></ion-icon></h2>
+                </div>
+                <div>
+                    <h1>PROJECT 6</h1>
+                    <h2><ion-icon name="add-circle-outline"></ion-icon></h2>
+                </div>
+            </div>
+        </section> -->
+    </div>
+    <footer>
+        <div class="foooter">
+            <div class="flogo">
+                <a href="./index.html"><img src="logo.png" alt="error loading logo"></a>
+            </div>
+            <div class="fcopy">
+                <ul>
+                    <li>&copy; GENSUS 2023</li>
+                    <li>ALL RIGHTS RESERVED.</li>
+                </ul>
+            </div>
+            <div class="flist">
+                <ul>
+                    <a href="./index.html">
+                        <li>HOME</li>
+                    </a>
+                    <a href="./projects.html">
+                        <li>PROJECT</li>
+                    </a>
+
+                    <a href="./team.html">
+                        <li>TEAM</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="ficon">
+
+                <a href="https://instagram.com/team.gensus?igshid=YmMyMTA2M2Y=" target="_blank"> <ion-icon
+                    name="logo-instagram"></ion-icon></a>
+                    <a href="https://discord.gg/PWEHBRN9fQ" target="_blank"><ion-icon name="logo-discord"></ion-icon></a>
+           
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=teamgensus@gmail.com" target="_blank"> <ion-icon name="mail-outline"></ion-icon></a>
+
+            </div>
+        </div>
+    </footer>
+    <div class="modal">
+        <ul style="list-style: none;">
+            <a href="./index.html">
+                <li>HOME</li>
+            </a>
+            <a href="./projects.html">
+                <li>PROJECT</li>
+            </a>
+
+            <a href="./team.html">
+                <li>TEAM</li>
+            </a>
+            <li id="last">&copy; GENSUS 2023</li>
+        </ul>
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        var fade = document.getElementsByClassName('belownav')[0];
+        var nav = document.getElementsByClassName('navigation')[0];
+
+
+        window.addEventListener(`scroll`, function (e) {
+            const heroOpas = this.scrollY / 500;
+                      
+            if (heroOpas === 0) {
+                fade.style.opacity = 1;
+                nav.style.opacity = 1;
+            }
+            if (heroOpas > 0) {
+                fade.style.opacity = `${1 - heroOpas}`;
+                nav.style.opacity = `${(1 - 10 * heroOpas)}`;
+                // fade.style.scale = `${(1 + 10 * heroOpas)}`;
+
+            }
+            const none = this.scrollY; 
+            if(none > 600){
+                fade.style.display = "none";
+            }
+            if(none < 600){
+                fade.style.display = "flex";
+            }
+        });
+
+
+        function myFunction(x) {
+            x.classList.toggle("change");
+            var modal = document.getElementsByClassName('modal')[0];
+
+
+            modal.classList.toggle("open");
+            nav.classList.toggle("fix");
+
+
+        }
+    </script>
+
+</body>
+</html>

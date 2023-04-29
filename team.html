@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE TEAM</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+    * {
+        font-family: 'League Spartan', sans-serif;
+
+
+    }
+
+    :root {
+        --size: 25px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #e00300;
+    }
+
+    .navigation {
+        position: fixed;
+        top: 0;
+        padding-top: 30px;
+        height: 70px;
+        opacity: 1;
+        z-index: 200;
+    }
+
+    .belownav {
+        position: fixed;
+        top: 0px;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(25, 24, 24);
+        z-index: 102;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        transform: scale(1);
+    }
+
+    .belownav h1 {
+        text-align: start;
+        color: #e00300;
+        padding-left: 35vw;
+        font-size: calc(3 * var(--size));
+    }
+
+    h1 span {
+        color: rgb(189, 16, 16);
+        font-size: calc(4 * var(--size));
+        scale: 5;
+    }
+
+    .info {
+        position: relative;
+        /* height: 300vh; */
+        width: 100vw;
+        background-color: rgb(24, 25, 24);
+        z-index: 101;
+        color: rgb(24, 25, 24);
+    }
+
+    .about{
+        padding-top: 150vh;
+        color: #ff0400;
+        font-size: 90px;
+        text-align: center;
+        font-weight: bolder;
+    }
+    .about h1{
+        font-size: 100px;
+    }
+    .info ul{
+        list-style:none;
+        display: block;
+        margin-left: 300px;
+        margin-right: 300px;
+        font-size: 60px;
+        color:#e00300;
+        text-align: center;
+        
+    }
+    .info li{
+        padding-top: 40px;
+        font-size: 40px;
+    }
+    .team{
+        margin-top: 100px;
+        background-color: rgb(24, 25, 24);
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .team1{
+        margin-top: 100px;
+        background-color: rgb(24, 25, 24);
+        display: grid;
+       
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .member{
+      
+        width: 33.34vw;
+        background-color: rgb(24, 25, 24);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .member1{
+      
+        width: 50vw;
+        background-color: rgb(24, 25, 24);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .photo{
+        background-color: rgb(25, 185, 52);
+        height:300px;
+        width:300px;
+        border-radius: 50%;
+    }
+    .name{
+        /* background-color: chocolate; */
+        color:#ff0400;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    .name1{
+        color: #c0c000;;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .belownav h1 {
+            padding-left: 15vw;
+        }
+
+        .belownav h1 {
+            --size: 13px;
+        }
+        ion-icon {
+            font-size: 16px;
+        }
+        .photo{
+      
+        height:200px;
+        width:200px;
+      
+    }
+    .team{
+      
+        grid-template-columns: repeat(1,1fr);
+    }
+    .team1{
+       
+        
+        grid-template-columns: repeat(1,1fr);
+    
+    }
+
+    .member{
+      
+      width: 100vw;
+     
+  }
+  .member1{
+    
+      width: 100vw;
+     
+  }
+  .name{
+    font-size: 20px;
+  }
+  .info li{
+        font-size: 20px;
+       
+    }
+    .info ul{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .about h1{
+        font-size: 50px;
+    }
+
+
+    }
+
+    @media only screen and (max-width: 900px) {
+        
+    }
+   
+    .line1::after {
+        top: 35px;
+    }
+
+    .line2::after {
+        top: 65px;
+    }
+
+    .line3::after {
+        top: 95px;
+    }
+
+    #i {
+        margin-left: 0.5vw;
+    }
+    .about{
+        font-size: 30px;
+    }
+    .info ul{
+        font-size: 30px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+   
+</style>
+
+<body>
+    <nav>
+        <div class="navigation">
+            <div class="navlogo">
+                <a href="./index.html"><img src="logo.png" alt="error loading logo"></a>
+            </div>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="list">
+                <ul style="list-style: none;">
+                    <a href="./index.html">
+                        <li class="line1">HOME&nbsp; </li>
+                    </a>
+                    <a href="./projects.html">
+                        <li class="line2">PROJECT&nbsp;</li>
+                    </a>
+                    <a href="./team.html">
+                        <li class="line3">TEAM&nbsp;</li>
+                    </a>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="belownav">
+        <h1><span>D</span>edication
+        </h1>
+        <h1 id="i"><span>I</span>ntegration</h1>
+        <h1><span>C</span>ommunication</h1>
+        <h1><span>K</span>nowledge</h1>
+
+    </div>
+    <div class="info">
+        <div class="about">
+            <h1>About Us</h1>
+        </div>
+        <div class="points">
+            <ul>
+                <li>We are a group of tech enthusiasts & tinkerers making robots that not only look cool, but also serve as a platform for learning and innovation.
+                    The present team comprises sophomores from the electrical, mechanical & aerospace engineering departments.
+                    
+                </li>
+                <li>The team is not restricted to a single project, but instead, works on various projects concurrently as determined by the team members. 
+                    The Founding members participated in various institute level competitions, as a result the Team was established to address the lack of small, dynamic & motivated groups of tinkerers.
+                    
+                </li>
+            </ul>
+        </div>
+
+        <div class="team1">
+            <div class="member1">
+                <div class="photo" style="background-image: url(dc.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;"></div>
+                <div class="name">Prof. Debraj Chakraborty 
+                </div>
+                <div class="name1 name">Faculty Advisor
+                </div>
+            </div>
+            <div class="member1">
+                <div class="photo"  style="background-image: url(ABHISHEK\ GUPTA.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;"></div>
+                <div class="name">Prof. Abhishek Gupta 
+                </div>
+                <div class="name1 name">Faculty Advisor
+                </div>
+            </div>
+        </div>
+        <div class="team1">
+            <div class="member1">
+                <div class="photo" style="background-image: url(sajal.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;"></div>
+                <div class="name">Sajal Deolikar 
+                </div>
+                <div class="name1 name">Team Leader</div>
+            </div>
+            <div class="member1">
+                <div class="photo" style="background-image: url(adityaya.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;"></div>
+                <div class="name">Adityaya Dhande </div>
+                <div class="name1 name">Deputy Team Leader</div>
+            </div>
+        </div>
+        <div class="team">
+            <div class="member">
+                <div class="photo" style="background-image: url(PRIYANSH.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;"></div>
+                <div class="name">Priyansh Jain
+                </div>
+            </div>
+            <div class="member">
+                <div class="photo"  style="background-image: url(daksh.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;"  ></div>
+                <div class="name">Daksh Katkar
+                </div>
+            </div>
+          
+         
+            <div class="member">
+                <div class="photo" style="background-image: url(shobhit.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;"></div>
+                <div class="name">Shobhit Maheshwari
+                </div>
+            </div>
+            <div class="member">
+                <div class="photo" style="background-image: url(sathvik.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;"></div>
+                <div class="name">Satvik Kanna
+                </div>
+            </div>
+           
+            <div class="member">
+                <div class="photo" style="background-image: url(DEEP.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;"></div>
+                <div class="name">Deep Boliya 
+                </div>
+            </div>
+            <div class="member">
+                <div class="photo" style="background-image: url(priyanshu.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;"></div>
+                <div class="name">Priyanshu Gupta
+                </div>
+            </div>
+          
+            <div class="member">
+                <div class="photo" style="background-image: url(Arnav_Jaideep_Kalgutkar.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;"></div>
+                <div class="name">Arnav Kalgutkar
+                </div>
+            </div>
+            <div class="member">
+                <div class="photo" style="background-image: url(sanidhya.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;"></div>
+                <div class="name">Sannidhya Kaushal
+                </div>
+            </div>
+           
+            <div class="member">
+                <div class="photo" style="background-image: url(KARTHIK\ UC.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;"></div>
+                <div class="name">Kartik UC
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foooter">
+            <div class="flogo">
+                <a href="./index.html"><img src="logo.png" alt="error loading logo"></a>
+            </div>
+            <div class="fcopy">
+                <ul>
+                    <li>&copy; GENSUS 2023</li>
+                    <li>ALL RIGHTS RESERVED.</li>
+                </ul>
+            </div>
+            <div class="flist">
+                <ul>
+                    <a href="./index.html">
+                        <li>HOME</li>
+                    </a>
+                    <a href="./projects.html">
+                        <li>PROJECT</li>
+                    </a>
+
+                    <a href="./team.html">
+                        <li>TEAM</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="ficon">
+                <a href="https://instagram.com/team.gensus?igshid=YmMyMTA2M2Y=" target="_blank"> <ion-icon
+                    name="logo-instagram"></ion-icon></a>
+                    <a href="https://discord.gg/PWEHBRN9fQ" target="_blank"><ion-icon name="logo-discord"></ion-icon></a>
+           
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=teamgensus@gmail.com" target="_blank"> <ion-icon name="mail-outline"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+    <div class="modal">
+        <ul style="list-style: none;">
+            <a href="./index.html">
+                <li>HOME</li>
+            </a>
+            <a href="./projects.html">
+                <li>PROJECT</li>
+            </a>
+
+            <a href="./team.html">
+                <li>TEAM</li>
+            </a>
+            <li id="last">&copy; GENSUS 2023</li>
+        </ul>
+
+    </div>
+
+
+   
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        var fade = document.getElementsByClassName('belownav')[0];
+        var nav = document.getElementsByClassName('navigation')[0];
+
+
+        window.addEventListener(`scroll`, function (e) {
+            const heroOpas = this.scrollY / 500;
+            if (heroOpas === 0) {
+                fade.style.opacity = 1;
+                nav.style.opacity = 1;
+            }
+            if (heroOpas > 0) {
+                fade.style.opacity = `${1 - heroOpas}`;
+                nav.style.opacity = `${(1 - 10 * heroOpas)}`;
+                // fade.style.scale = `${(1 + 10 * heroOpas)}`;
+
+            }
+            const none = this.scrollY; 
+            if(none > 600){
+                fade.style.display = "none";
+            }
+            if(none < 600){
+                fade.style.display = "flex";
+            }
+        });
+
+
+        function myFunction(x) {
+            x.classList.toggle("change");
+            var modal = document.getElementsByClassName('modal')[0];
+
+
+            modal.classList.toggle("open");
+            nav.classList.toggle("fix");
+
+
+        }
+    </script>
+</body>
+
+</html>
