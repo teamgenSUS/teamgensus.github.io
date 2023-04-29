@@ -47,8 +47,15 @@
         position: absolute;
         bottom: 250px;
         font-size: 43px;
+        transition: transform 1s ease;
+        color : #858585;
         /* border-top: 2px solid white; */
         /* background-color: aquamarine; */
+    }
+    .join h1:hover {
+
+        color : red;
+        cursor : pointer;
     }
 
 
@@ -102,17 +109,18 @@
 
     .name {
         font-size: 50px;
-        border-bottom: 4px solid #e00300;
+        /* border-bottom: 4px solid #e00300; */
         padding-bottom: 20px;
     }
 
     .explore {
+        /* edited */
         font-size: 43px;
 
     }
-    /* .explore:hover{
-
-    } */
+    .explore:hover{
+        color : #858585;
+    }
 
     .projects p {
         text-align: end;
@@ -171,7 +179,7 @@
         background-color: rgb(24, 25, 24);
         border: 2px solid #e00300;
         background-image: url("grover.png");
-        background-size: 800px;
+        background-size: 600px;
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -185,7 +193,7 @@
         background-color: rgb(24, 25, 24);
         border: 2px solid #e00300;
         background-image: url("thanopod.png");
-        background-size: 600px;
+        background-size: 400px;
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -271,8 +279,8 @@
         list-style: none;
         margin-left: 40px;
         margin-right: 40px;
-        font-size: 40px;
-        color:#e00300;
+        font-size: 30px;
+        color:#858585;
     }
 
   
@@ -296,7 +304,7 @@
         }
     }
     ion-icon {
-  font-size: 48px;
+  font-size: 30px;
   color: #e00300;
 }
 button{
@@ -320,6 +328,7 @@ button{
     }
    
 }
+
 </style>
 
 <body onload="myFunction1()">
@@ -331,7 +340,7 @@ button{
                     <li>Join us in our mission to create robots that not only look cool, but also serve as a platform for learning and innovation. As a group of passionate tech enthusiasts, we're constantly trying to learn more and make better robots. Come, be a part of our team & discover the world of robotics!
                     </li>
                     <br>
-                    <li>Click on the discord server link below, where you will find challenging problems based on real life technical difficulties.
+                    <li>Click on the <font color= "red">discord server link:</font> <a href="https://discord.gg/PWEHBRN9fQ" target="_blank"><ion-icon name="logo-discord"></ion-icon></a> where you will find challenging problems based on real life technical difficulties.
                     </li>
                     <br>
                     <li>Selection depends on your understanding, common sense and interview performance.
@@ -341,7 +350,8 @@ button{
                     </li>
                     <li class="stu"> Keep it Simple, Stupid!</li>
                 </ul>
-                <a href="https://discord.gg/PWEHBRN9fQ" target="_blank"><ion-icon name="logo-discord"></ion-icon></a>
+                <br><br>
+
             </div>
         </div>
     </div>
@@ -398,7 +408,8 @@ button{
         <div class="projects" class="after">
             <div class="p1">
                 <div>
-                    <h1 class="name">ROVER</h1>
+                    <br><br>
+                    <h1 class="name">GROVER</h1>
                   
                 </div>
                 <div>
@@ -407,7 +418,8 @@ button{
             </div>
             <div class="p2">
                 <div>
-                    <h1 class="name">THANO POD</h1>
+                    <br><br>
+                    <h1 class="name">THANOPOD</h1>
                     
                 </div>
                 <div>
@@ -447,6 +459,7 @@ button{
 
                 <a href="https://instagram.com/team.gensus?igshid=YmMyMTA2M2Y=" target="_blank"> <ion-icon
                         name="logo-instagram"></ion-icon></a>
+                        <br><br>
                         <a href="https://discord.gg/PWEHBRN9fQ" target="_blank"><ion-icon name="logo-discord"></ion-icon></a>
                
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=teamgensus@gmail.com" target="_blank"> <ion-icon name="mail-outline"></ion-icon></a>
