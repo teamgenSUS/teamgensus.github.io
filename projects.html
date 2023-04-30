@@ -108,6 +108,7 @@ a{
     .p1 {
         background-color: rgb(24, 25, 24);
         border: 2px solid #e00300;
+        border-bottom: none;
         background-image: url("grover.png");
         background-size: 500px;
         background-repeat: no-repeat;
@@ -122,11 +123,38 @@ a{
     .p2 {
         background-color: rgb(24, 25, 24);
         border:2px solid #e00300;
+        border-bottom: none;
         background-image: url("thanopod.png");
         background-size: 400px;
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    .p3 {
+        background-color: rgb(24, 25, 24);
+        border: 2px solid #e00300;
+        border-top: none;
+        /* background-image: url("grover.png"); */
+        background-size: 500px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .p3>div,
+    .p4>div {
+        margin-bottom: 30px;
+    }
+
+    .p4 {
+        background-color: rgb(24, 25, 24);
+        border:2px solid #e00300;
+        border-top: none;
+        /* background-image: url("thanopod.png"); */
+        background-size: 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+   
    
     .completed{
         background-color: rgb(24, 25, 24);
@@ -211,6 +239,10 @@ a{
         background-size: 200px;  
         background-position: bottom;    
     }
+    .p4,.p3 {      
+        background-size: 200px;  
+        background-position: bottom;    
+    }
     }
 
     .discord{
@@ -254,8 +286,8 @@ a{
         list-style: none;
         margin-left: 40px;
         margin-right: 40px;
-        font-size: 40px;
-        color:#e00300;
+        font-size: 30px;
+        color:#858585;
     }
     ion-icon {
   font-size: 48px;
@@ -276,16 +308,16 @@ button{
     ion-icon {
   font-size: 32px;
     }
-    .p2,.p1 {      
-        background-size: 200px;  
-        background-position: bottom;    
-    }
+
+
+
+
 
 }
 
 </style>
 <body>
-    <div class="discord" id="id002">
+    <!-- <div class="discord" id="id002">
         <div class="space">
             <div class="but"><button class="sbut" onclick="document.getElementById('id002').style.display='none'"><ion-icon name="close-circle-outline"  ></ion-icon></button></div>
             <div class="link">
@@ -322,7 +354,9 @@ button{
                
             </div>
         </div>
-    </div>
+    </div> -->
+
+
     <nav>
         <div class="navigation">
             <div class="navlogo">
@@ -363,27 +397,73 @@ button{
                     </div>
                     <div>
                         
-                        <h1 onclick="document.getElementById('id002').style.display='flex'" class="explore">MORE<ion-icon name="arrow-forward-outline"></ion-icon></h1>
+                        <!-- <h1 onclick="document.getElementById('id002').style.display='flex'" class="explore">MORE<ion-icon name="arrow-forward-outline"></ion-icon></h1> -->
                     </div>
                     
                 </div>
+            
+
                 
 
                 <div class="p2">
                     <div>
                         <br><br>
-                        <h1 class="name">THANO POD</h1>
+                        <h1 class="name">THANOPOD</h1>
                        
                     </div>
                     <div>
-                        <h1 onclick="document.getElementById('id003').style.display='flex'" class="explore">MORE<ion-icon name="arrow-forward-outline"></ion-icon></h1>
+                        <!-- <h1 onclick="document.getElementById('id003').style.display='flex'" class="explore">MORE<ion-icon name="arrow-forward-outline"></ion-icon></h1> -->
                     </div>
     
                 </div>
                 
             </div>
+            <div class="projects">
+
+                <div class="p3">
+                    <br>
+                    <div class="link">
+                        <ul>
+                            <li>A six wheeled ground based rover with rocker bogie suspension that will be capable of maneuvering through difficult terrains.
+        
+                            </li>
+                            <br>
+                            <li>It will use Computer Vision for object detection and avoidance along with a variety of other engineering concepts.
+        
+                            </li>
+                            <br>
+                           
+                        </ul>
+                      
+                    </div>
+                </div>
+            
+                <div class="p4">
+                    <br>
+                    <div class="link">
+                        <ul>
+                            <li>A six wheeled ground based rover with rocker bogie suspension that will be capable of maneuvering through difficult terrains.
+        
+                            </li>
+                            <br>
+                            <li>It will use Computer Vision for object detection and avoidance along with a variety of other engineering concepts.
+        
+                            </li>
+                            <br>
+                           
+                        </ul>
+                      
+                    </div>
+                </div>
+              
+            </div>
+           
+            
+            
+
     
         </section>
+
         <!-- <section>
             <div class="completed">
                 <div>
@@ -413,6 +493,7 @@ button{
             </div>
         </section> -->
     </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <footer>
         <div class="foooter">
             <div class="flogo">
@@ -461,9 +542,8 @@ button{
             <a href="./team.html">
                 <li>TEAM</li>
             </a>
-            <li id="last">&copy; GENSUS 2023</li>
+            <li id="last">&copy; genSUS 2023</li>
         </ul>
-
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
