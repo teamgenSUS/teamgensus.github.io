@@ -62,7 +62,7 @@ a{
     
     .project {
         position: relative;
-        height: 250vh;
+        height: 200vh;
         width: 100vw;
         background-color: rgb(24, 25, 24);
         z-index: 101;
@@ -73,7 +73,7 @@ a{
         background-color: rgb(24, 25, 24);
     }
     .projects {
-        height: 80vh;
+        height: 110vh;
         width: 100vw;
         background-color: rgb(25, 24, 24);
         display: flex;
@@ -108,26 +108,25 @@ a{
     .p1 {
         background-color: rgb(24, 25, 24);
         border: 2px solid #e00300;
+        height : 80vh;
         border-bottom: none;
-        background-image: url("grover.png");
-        background-size: 40vw;
+        /* background-image: url("grover.png");
+        background-size: 80vw;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center; */
     }
 
-    .p1>div,
-    .p2>div {
-        margin-bottom: 30px;
-    }
+
 
     .p2 {
         background-color: rgb(24, 25, 24);
         border:2px solid #e00300;
+        height : 80vh;
         border-bottom: none;
-        background-image: url("thanopod.png");
-        background-size: 27vw;
+        /* background-image: url("thanopod.png");
+        background-size: 54vw;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center; */
     }
 
     .p3 {
@@ -190,9 +189,9 @@ a{
     }
     @media only screen and (max-width: 600px) {
         .projects {
-            height: 70vh;
+            height: 240vh;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-between;
             align-items: center;
         }
@@ -230,18 +229,26 @@ a{
     }
     .project {
        
-        height: 230vh;
+        height: 330vh;
     }
     .belownav h1{
         font-size: 80px;
     }
+    .grover1{
+    height : 313px;
+    width : 450px;
+    }
+    .thanopod1{
+    height : 500px;
+    width : 417px;
+    } 
     .p1 {      
-        background-size: 150px;  
-        background-position: bottom;    
+        height : 30vh;
+        border: 2px solid #e00300;
     }
     .p2 {      
-        background-size: 150px;  
-        background-position: bottom;    
+        height : 30vh;
+        border: 2px solid #e00300;
     }
 
     .p4,.p3 {      
@@ -325,6 +332,17 @@ button{
 
 }
 
+.grover1{
+    height : 419px;
+    width : 595px;
+    }
+
+.thanopod1{
+    height : 500px;
+    width : 417px;
+}
+
+
 </style>
 <body>
     <!-- <div class="discord" id="id002">
@@ -401,34 +419,67 @@ button{
             <div class="projects">
                 <div class="p1">
                     <div>
-                        <br><br>
-                        <h1 class="name">GROVER</h1>
-                        
+                        <br>
+                        <h1 class="name">GROVER</h1>                     
                     </div>
-                    <div>
+
+                <div>
                         
                         <!-- <h1 onclick="document.getElementById('id002').style.display='flex'" class="explore">MORE<ion-icon name="arrow-forward-outline"></ion-icon></h1> -->
-                    </div>
-                    
                 </div>
+                
+                <img class = "grover1" src = "grover.png">    
+                <br><br><br><br><br><br>
+                <div class="link">
+                    <ul>
+                        <li>A six wheeled ground based rover with rocker bogie suspension that will be capable of maneuvering through difficult terrains.
+    
+                        </li>
+                        <br>
+                        <li>It will use Computer Vision for object detection and avoidance along with a variety of other engineering concepts.
+    
+                        </li>
+                        <br>
+                       
+                    </ul>
+                  
+                </div>
+            </div>
             
 
                 
 
                 <div class="p2">
                     <div>
-                        <br><br>
+                        <br>
                         <h1 class="name">THANOPOD</h1>
                        
                     </div>
                     <div>
                         <!-- <h1 onclick="document.getElementById('id003').style.display='flex'" class="explore">MORE<ion-icon name="arrow-forward-outline"></ion-icon></h1> -->
                     </div>
-    
+                    
+                    <img  class = "thanopod1" src = "thanopod.png">  
+
+                    <div class="link">
+                        <ul>
+                            <li>You might have heard of the Segway, but now picture it being seamlessly integrated with your own two feet. It's the next big thing in robotics, and we're working to make it a reality.
+        
+                            </li>
+                            <br>
+                            <li>Thanopod is a two wheeled self balancing robot that will be capable of traversing through various terrains, transporting loads & navigating using a camera.
+        
+                            </li>
+                            <br>
+                           
+                        </ul>
+                      
+                    </div>
                 </div>
                 
             </div>
-            <div class="projects">
+
+            <!-- <div class="projects">
 
                 <div class="p3">
                     <br>
@@ -466,7 +517,7 @@ button{
                     </div>
                 </div>
               
-            </div>
+            </div> -->
            
             
             
