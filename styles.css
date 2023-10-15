@@ -101,6 +101,8 @@ nav a:hover {
   /* Style the navbar links */
   .navbar-nav .nav-link {
 	color: white; /* Set link text color to white */
+	  font-size:17px;
+	  font-weight:600;
   }
   
   /* Style the toggle button icon color */
@@ -1605,4 +1607,8 @@ padding-left:4.1rem;
 }
 .mt-5{
 	margin-bottom:1rem!important;
+}
+h6.st{
+	font-size:28px;
+	font-weight:600;
 }
