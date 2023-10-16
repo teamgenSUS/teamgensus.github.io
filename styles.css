@@ -164,7 +164,7 @@ text-decoration: none;
 		}	
 .st {
     font-family: 'JetBrains Mono', monospace;
-	font-size:43px;
+	font-size:30px;
 	/* color:#ffffff; */
 }
 
@@ -1395,7 +1395,7 @@ text-align:left
 } */
 
 .cool{
-	padding-left:7rem;
+	padding-left:7rem!important;
 }
 /* .row{
 	padding-left:6rem;
