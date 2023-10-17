@@ -1661,3 +1661,7 @@ h6.st{
 		padding-left:5rem;
 	}
 }
+.h6.text-center.st{
+	font-size:20px;
+	font-weight:600;
+}
