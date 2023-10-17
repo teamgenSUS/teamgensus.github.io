@@ -170,9 +170,13 @@ text-decoration: none;
 
 .ke {
     font-family: 'Roboto', sans-serif;
-	padding-left:5rem;
+	
 }
-
+@media(min-width:768px){
+	.ke{
+		padding-left:5rem;
+	}
+}
 .teamgen {
     margin-left: 16rem;
 }
